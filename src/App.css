@@ -1,38 +1,191 @@
-.App {
+/* 
+const messages = [
+  "Learn React ⚛️",
+  "Apply for jobs 💼",
+  "Invest your new income 🤑",
+];
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.steps {
+  width: 600px;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers > div {
+  height: 40px;
+  aspect-ratio: 1;
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.numbers .active {
+  background-color: #7950f2;
+  color: #fff;
+}
+
+.message {
   text-align: center;
-}
+  font-size: 20px;
+  margin: 40px 0;
+  font-weight: bold;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons button span {
+  font-size: 16px;
+  line-height: 1;
+}
+
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 40px;
+  color: inherit;
+}
+
+.close:hover {
+  color: #7950f2;
+}
+
+
+.circle {
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  vertical-align: middle;
+      /* display: table-cell; */
+  /* display: block; */
+
+}
+
+.main-circle {
+display: flex;
+flex-direction: row;
+gap: 30px;
+ align-items:center;
+justify-content: space-between;
+/* width: 400px; */
+}
+
+.active {
+   background-color: #7950f2;
+   color: white;
+}
+
+.steps-main {
+  display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 500px;
+    margin: 20px auto;
+    height: 300px;
+    padding: 10px 10px;
+}
+
+button {    padding: 7.5px 10px;
+    background:#e2e2e2;
+    color: rgb(0, 0, 0);
+    border: 1px solid #5d26ff;
+    border-radius: 15px;
+
+}
+.buttons-main-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+button:active {
+  background: #7950f2;
+  color: white;
+}
+button:hover {
+  background: #7950f2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.disable {
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-div {
+  margin: 10px auto;
+  width: 600px;
+}
+
+.btn-show {
+    width: fit-content;
+    height: 30px;
+    text-align: center;
+    background: #67ff67;
+    color: black;
+    border: 0;
+}
+.btn-show:hover {
+   background: #67ff67;
+    color: black;
+}
+.red {
+  background-color: red;
 }
